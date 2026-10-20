@@ -17,6 +17,16 @@ public class biblioteca {
         System.out.println(l3.estaDisponible());
         System.out.println(l1 == l2);
         System.out.println(l1 == l3);
+        
+        
+                libro l4 = null;
+        if (l4 != null) {
+            l4.mostrarInformacion();
+        } else {
+            System.out.println("No hay libro");
+        }
     }
 }
 
+
+              
