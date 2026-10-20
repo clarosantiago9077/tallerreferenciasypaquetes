@@ -44,4 +44,11 @@ public class libro {
             this.titulo = titulo;
         }
     }
+
+    // No existe setDisponible: la disponibilidad solo cambia con prestar() y devolver()
+
+    // Reto 3
+    public boolean mismoTitulo(libro otro) {
+        return otro != null && this.titulo.equals(otro.titulo);
+    }
 }
