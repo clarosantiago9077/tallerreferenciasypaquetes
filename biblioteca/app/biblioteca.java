@@ -1,6 +1,7 @@
 package biblioteca.app;
 
    //import biblioteca.modelo.libro;
+   import biblioteca.modelo.socio;
 
 import biblioteca.modelo.libro;
 
@@ -26,11 +27,19 @@ public class biblioteca {
             System.out.println("No hay libro");
            
                     
-                           // Etapa 4
+                          
         l1.setTitulo("");
         System.out.println(l1.getTitulo());
         libro l5 = new libro("", "Anónimo");
         System.out.println(l5.getTitulo());
+        
+                
+        socio camila = new socio("Camila");
+        camila.prestarLibro(l3);
+        camila.prestarLibro(l1);
+        camila.prestarLibro(null);
+        System.out.println(camila.getLibrosPrestados());
+        System.out.println(l3.estaDisponible());
             
                                    
         }
