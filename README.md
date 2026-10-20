@@ -4,3 +4,7 @@ prediccion l1.estaDisponible() → false: l2 apunta al mismo libro que l1, así 
 l3.estaDisponible() → true: l3 es otro libro creado con new y nadie lo prestó.
 l1 == l2 → true: las dos variables apuntan al mismo objeto.
 l1 == l3 → false: tienen los mismos datos, pero son objetos distintos.
+
+ETAPA 3 MENSAJE DE ERROR : Exception in thread "main" java.lang.NullPointerException: Cannot invoke "biblioteca.modelo.libro.mostrarInformacion()" because "l4" is null
+
+ETAPA 4 ERROR EN LA LINEA: error: titulo has private access in libro
