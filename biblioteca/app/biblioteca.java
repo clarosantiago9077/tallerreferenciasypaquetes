@@ -24,6 +24,15 @@ public class biblioteca {
             l4.mostrarInformacion();
         } else {
             System.out.println("No hay libro");
+           
+                    
+                           // Etapa 4
+        l1.setTitulo("");
+        System.out.println(l1.getTitulo());
+        libro l5 = new libro("", "Anónimo");
+        System.out.println(l5.getTitulo());
+            
+                                   
         }
     }
 }

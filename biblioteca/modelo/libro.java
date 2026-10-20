@@ -7,9 +7,10 @@ public class libro {
     private boolean disponible;
 
     public libro(String titulo, String autor) {
-        this.titulo = titulo;
+        this.titulo = "Sin título";   // valor por defecto si el título es inválido
+        setTitulo(titulo);            // reutiliza la validación del set
         this.autor = autor;
-        this.disponible = true;   // un libro nuevo queda disponible
+        this.disponible = true;
     }
 
     public boolean estaDisponible() {
@@ -26,5 +27,21 @@ public class libro {
 
     public void mostrarInformacion() {
         System.out.println(titulo + " de " + autor + " | disponible: " + disponible);
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setTitulo(String titulo) {
+        if (titulo == null || titulo.isEmpty()) {
+            System.out.println("Título inválido");
+        } else {
+            this.titulo = titulo;
+        }
     }
 }
