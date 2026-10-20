@@ -9,6 +9,9 @@ ETAPA 3 MENSAJE DE ERROR : Exception in thread "main" java.lang.NullPointerExcep
 
 ETAPA 4 ERROR EN LA LINEA: error: titulo has private access in libro
 
+PARTE B <img width="1560" height="900" alt="diagrama_clases_parteB" src="https://github.com/user-attachments/assets/bc762e30-f6fb-40b2-a4e7-f118adda6c7d" />
+
+
 PREGUNTAS
 1. ¿Qué guarda una variable int y qué guarda una variable libro?
 Una variable int guarda el número directamente, por ejemplo un 19. Una variable libro no guarda el libro completo, guarda una referencia, que es como la dirección de dónde está el objeto en memoria. Si no apunta a ningún objeto, vale null.
